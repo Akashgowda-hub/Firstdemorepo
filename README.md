@@ -70,3 +70,41 @@ C.**Push Changes:**
 To upload your local repository content to the remote repository, use:
 
 git push origin main
+
+**Init cmd**
+
+Init is used to create a new Git repo
+
+git init = create a Git repository in a folder
+
+Once init cmd is executed, you have to create a remote repo, which can be done in two ways: Using CLI and GUI. The above steps were done using GUI.
+
+Steps for CLI:
+
+1. Install Git CLI on your local system.
+
+2. heck CLI version: gh --version
+
+3. Authenticate with Git CLI: gh auth login
+
+4. Run the following command to create a remote repo from CLI: "gh repo create <github-localrepo> --public --confirm"
+
+For additional help, use the Git CLI docs.
+
+Once the repo is created, run the following command to link the remote repo with the current folder and files:
+git remote add origin "https://github.com/your-username/<repo-name>.git"
+Once confirmation is received, use add, commit, and push commands to update your local files/repo to the remote repo.
+
+***Delete the Most Recent Commit Locally and Remote (Hard Reset)***
+
+"git reset --hard HEAD~1"
+
+--HEAD~1 refers to the previous commit (one commit before the current)
+--hard means you want to reset both your working directory and the commit history.
+
+
+**Push the Changes to the Remote Repository**
+
+"it push origin main --force"
+
+
