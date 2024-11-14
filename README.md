@@ -56,32 +56,32 @@ This is my first repository.
 9. **Git Add, commit & Push:**
 
   A. ****Add Files:**
-  <br>To add new or changed files in your working directory to the Git staging area, use:</br>
+  To add new or changed files in your working directory to the Git staging area, use:
    git add <filename>
   
-  <br>To add all files at once:</br>
-  <br>git add .</br>
+  To add all files at once:
+  git add .
   
   B. **Commit Changes:**
-  <br>To record changes and create a commit, use:</br>
-  <br>git commit -m "your commit message"</br>
+  To record changes and create a commit, use:
+  git commit -m "your commit message"
   
   C.**Push Changes:**
-  <br>To upload your local repository content to the remote repository, use:</br>
+  To upload your local repository content to the remote repository, use:
   
-  <br>git push origin main</br>
+  git push origin main
 
 10. **Init cmd**
 
   Init is used to create a new Git repo
   
-  <br>git init : initializes a new Git repository, creating a .git directory where Git will store all of its information about the repository.</br>
-  <br>git remote add origin <link> : associates your local repository with a remote repository, allowing you to push and pull code to and from a service like GitHub.</br>
-  <br>git remote -v : shows the remotes associated with your repository (both fetch and push).</br>
-  <br>git branch : lists all the local branches in the repository.</br>
-  <br>git branch -m main : renames the current branch to main. (Note: It's commonly used to switch to the main branch from an older default branch name like master.)</br>
+  git init : initializes a new Git repository, creating a .git directory where Git will store all of its information about the repository.
+  git remote add origin <link> : associates your local repository with a remote repository, allowing you to push and pull code to and from a service like GitHub.
+  git remote -v : shows the remotes associated with your repository (both fetch and push).
+  git branch : lists all the local branches in the repository.
+  git branch -m main : renames the current branch to main. (Note: It's commonly used to switch to the main branch from an older default branch name like master.)
   
-  <br>Once init cmd is executed, you have to create a remote repo, which can be done in two ways: Using CLI and GUI. The above steps were done using GUI.</br>
+  Once init cmd is executed, you have to create a remote repo, which can be done in two ways: Using CLI and GUI. The above steps were done using GUI.
 
 **Steps for CLI:**
 
@@ -95,52 +95,52 @@ This is my first repository.
 
   For additional help, use the Git CLI docs.
 
-  <br>Once the repo is created, run the following command to link the remote repo with the current folder and files:</br>
-  <br>git remote add origin "https://github.com/your-username/<repo-name>.git"</br>
-  <br>Once confirmation is received, use add, commit, and push commands to update your local files/repo to the remote repo.</br>
+  Once the repo is created, run the following command to link the remote repo with the current folder and files:
+  git remote add origin "https://github.com/your-username/<repo-name>.git"
+  Once confirmation is received, use add, commit, and push commands to update your local files/repo to the remote repo.
 
 11. **Git Branch**
 
-  <br>git branch : lists all the local branches in the repository.</br>
-  <br>git branch -m main : renames the current branch to main. (Note: It's commonly used to switch to the main branch from an older default branch name like master.)</br>
-  <br>git checkout <branchname> : Switches to an existing branch.</br>
-  <br>git checkout -b <newbranchname> : Creates a new branch and switches to it.</br>
-  <br>git branch -d <branchname> : Deletes a branch locally.</br>
+  git branch : lists all the local branches in the repository.
+  git branch -m main : renames the current branch to main. (Note: It's commonly used to switch to the main branch from an older default branch name like master.)
+  git checkout <branchname> : Switches to an existing branch.
+  git checkout -b <newbranchname> : Creates a new branch and switches to it.
+  git branch -d <branchname> : Deletes a branch locally.
 
-  Note: <br>This command deletes the specified branch from your local repository. You must ensure that the branch you're deleting is not the branch you're currently on (if you are on         the branch, Git will prevent you from deleting it).</br>
+  Note: This command deletes the specified branch from your local repository. You must ensure that the branch you're deleting is not the branch you're currently on (if you are on         the branch, Git will prevent you from deleting it).
   
 12. ** Merging code**
 
-  <br>git merge <branchname> :The git merge command is used to combine the changes from one branch into another.</br>
+  git merge <branchname> :The git merge command is used to combine the changes from one branch into another.
 
-  <br>Example: If you are on the main branch and want to merge a branch called feature-xyz into it, you would run:</br>
+  Example: If you are on the main branch and want to merge a branch called feature-xyz into it, you would run:
   git merge feature-xyz
   
-  <br>git diff <branchname> : To compare commits,branches, files & more</br>
+  git diff <branchname> : To compare commits,branches, files & more
  
 13. **Fork**
     
-  <br>A fork is a copy of someone else's repository (repo) that you can modify freely without affecting the original repo.</br>
-  <br>commonly used in open-source projects.</br>
-  <br>Example: You fork a project on GitHub, and now you have your own copy of the code to edit and make changes.</br>
+  A fork is a copy of someone else's repository (repo) that you can modify freely without affecting the original repo.
+  commonly used in open-source projects.
+  Example: You fork a project on GitHub, and now you have your own copy of the code to edit and make changes.
 
 14.  ** Pull Request (PR) **
-  <br>A Pull Request (PR) is a way to ask someone to review and merge your changes into their repository. You "request" to have your changes merged by the project maintainers.</br>
-  <br>Example: You make changes in your forked repo, and when you're ready, you create a PR to propose these changes to the original repo.</br>
+  A Pull Request (PR) is a way to ask someone to review and merge your changes into their repository. You "request" to have your changes merged by the project maintainers.
+  Example: You make changes in your forked repo, and when you're ready, you create a PR to propose these changes to the original repo.
 
 15. ***Delete the Most Recent Commit Locally and Remote (Hard Reset)***
 
    "git reset --hard HEAD~1"
 
-  <br>--HEAD~1 refers to the previous commit (one commit before the current)</br>
-  <br>--hard means you want to reset both your working directory and the commit history.</br>
+  --HEAD~1 refers to the previous commit (one commit before the current)
+  --hard means you want to reset both your working directory and the commit history.
   
   16. **Push the Changes to the Remote Repository**
   
    "git push origin main --force"
 
-   <br>git reset <file>: Unstages changes that have been added to the staging area.</br>
-   <br>git reset HEAD~1: Undo the last commit but keep the changes in your working directory.</br>
-   <br>git reset <commit-hash>: Reset your HEAD to a specific commit, keeping changes in your working directory but unstaged.</br>
-   <br>git reset --hard <commit-hash>: Completely discards all changes and resets your repository to a specific commit (destructive).</br>
+   git reset <file>: Unstages changes that have been added to the staging area.
+   git reset HEAD~1: Undo the last commit but keep the changes in your working directory.
+   git reset <commit-hash>: Reset your HEAD to a specific commit, keeping changes in your working directory but unstaged.
+   git reset --hard <commit-hash>: Completely discards all changes and resets your repository to a specific commit (destructive).
 
